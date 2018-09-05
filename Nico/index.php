@@ -1,2 +1,2 @@
 <?php
-echo "la puta madre por qué no se actualiza";
+echo "aaah ahora sí";
