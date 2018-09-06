@@ -8,6 +8,9 @@ body{
 ul li{
 	list-style: none;
 }
+header, main, footer p{
+	border-radius: 2px;
+}
 header{
 	display: inline-flex;
 	width:100%;
@@ -17,6 +20,7 @@ header{
 	align-items: center;
 	background-color: #ef3a31;	
 	color:#fff;
+	margin-top: 1em;
 }
 .logo img{
 	height: 70px;
@@ -84,4 +88,13 @@ main section form input:hover{
 .submit:hover{
 	background: #0a0;
 	border:0px;
+}
+footer p{
+	text-align: center;
+	line-height: 3em;
+	font-size: 14px;
+	background-color: #ef3a31;	
+	color:#fff;
+	margin-top: 1em;
+	margin-bottom:3em;
 }

@@ -37,5 +37,8 @@
 			<p><a href="resetpsw.php">Olvidé mi contraseña</a></p>
 		</section>
 	</main>
+	<footer>
+		<p>hery &copy; 2018</p>
+	</footer>
 </body>
 </html>
