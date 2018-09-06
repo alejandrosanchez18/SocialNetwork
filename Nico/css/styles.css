@@ -25,7 +25,7 @@ header{
 	display:flex;
 }
 .logo:after{
-	content: '@hery';
+	content: '@ hery';
 	color:#fff;
 	display:inline-block;
 	align-self: center;
@@ -78,6 +78,10 @@ main section form input:hover{
     color:#fff;
     font-size:1.5em;
     line-height: 0.5em;
-    border:0;
+    border:0px;
     border-radius: 0.1em;
+}
+.submit:hover{
+	background: #0a0;
+	border:0px;
 }
