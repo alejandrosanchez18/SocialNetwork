@@ -1,12 +1,19 @@
 *{margin:0;padding: 0;box-sizing: border-box;}
 body{
 	font-family: Varela Round, sans-serif;
+	font-size: 16px;
+	background-image: linear-gradient(to bottom right, #fff, #ccc);
+	height:100vh;
+}
+#totalwrap{
 	max-width: 960px;
 	margin:0 auto;
-	font-size: 16px;
 }
 ul li{
 	list-style: none;
+}
+a{
+	color:#000;
 }
 header, main, footer p{
 	border-radius: 2px;
@@ -17,28 +24,32 @@ header{
 	flex-wrap: nowrap;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
-	background-color: #ef3a31;	
+	align-items: center;	
 	color:#fff;
 	margin-top: 1em;
+	background-color: #ef3a31;
+}
+header a{
+	text-decoration: none;
 }
 .logo img{
-	height: 70px;
+	width:40%;
 }
 .logo{
 	display:flex;
+	margin-left: 1em;
+	padding:0.5em 0;
 }
 .logo:after{
 	content: '@ hery';
 	color:#fff;
 	display:inline-block;
-	align-self: center;
+	align-self: flex-end;
 	margin-left: 1em;
-	
+	transform: translateY(0.1em);	
 }
 header nav{
 	margin-right: 2em;
-
 }
 header nav ul li{
 	display:inline;
@@ -48,18 +59,24 @@ header nav ul li a{
 	display:inline-block;
 	padding:0 1.5em;
 	line-height:70px;
+	color: #fff;
 }
 header nav ul li a:hover{
 	text-decoration: underline;
 }
 main{
-	background-color: #eee;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 }
 main section{
-	padding:4em 0;
+	padding:2em;
+	margin:3em;
+	background-color:rgba(255,255,255,0.4);
+}
+main section:hover{
+	background-color:rgba(255,255,255,0.6);
+
 }
 main section form input{
 	display:block;
@@ -67,10 +84,13 @@ main section form input{
 	padding:0.5em 1em;
 	margin:1em 0;
 	border:1px solid rgba(127,127,127,0);
-	border-radius:0.3em;
+	border-radius:2px;
+	transform: translate(-0.0em);
+	transition: transform 300ms ease;
 }
-main section form input:focus{
+main section form .txtbox:focus{
 	border:1px solid rgba(127,127,127,1);
+	transform: translateY(-0.2em);
 }
 main section form input:hover{
 	border:1px solid rgba(127,127,127,0.5);
