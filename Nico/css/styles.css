@@ -13,12 +13,12 @@ header, main, footer p{
 }
 header{
 	display: inline-flex;
-	width:100%;
+	width:70%;
 	flex-wrap: nowrap;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #ef3a31;	
+	background-color: #ef3a31;
 	color:#fff;
 	margin-top: 1em;
 }
@@ -34,7 +34,7 @@ header{
 	display:inline-block;
 	align-self: center;
 	margin-left: 1em;
-	
+
 }
 header nav{
 	margin-right: 2em;
@@ -93,7 +93,7 @@ footer p{
 	text-align: center;
 	line-height: 3em;
 	font-size: 14px;
-	background-color: #ef3a31;	
+	background-color: #ef3a31;
 	color:#fff;
 	margin-top: 1em;
 	margin-bottom:3em;
