@@ -1,4 +1,100 @@
-*{margin:0;padding: 0;}
+*{margin:0;padding: 0;box-sizing: border-box;}
 body{
 	font-family: Varela Round, sans-serif;
+	max-width: 960px;
+	margin:0 auto;
+	font-size: 16px;
+}
+ul li{
+	list-style: none;
+}
+header, main, footer p{
+	border-radius: 2px;
+}
+header{
+	display: inline-flex;
+	width:100%;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #ef3a31;
+	color:#fff;
+	margin-top: 1em;
+}
+.logo img{
+	height: 70px;
+}
+.logo{
+	display:flex;
+}
+.logo:after{
+	content: '@ hery';
+	color:#fff;
+	display:inline-block;
+	align-self: center;
+	margin-left: 1em;
+
+}
+header nav{
+	margin-right: 2em;
+
+}
+header nav ul li{
+	display:inline;
+	font-size: 1.1em;
+}
+header nav ul li a{
+	display:inline-block;
+	padding:0 1.5em;
+	line-height:70px;
+}
+header nav ul li a:hover{
+	text-decoration: underline;
+}
+main{
+	background-color: #eee;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+main section{
+	padding:4em 0;
+}
+main section form input{
+	display:block;
+	font-size:1.1em;
+	padding:0.5em 1em;
+	margin:1em 0;
+	border:1px solid rgba(127,127,127,0);
+	border-radius:0.3em;
+}
+main section form input:focus{
+	border:1px solid rgba(127,127,127,1);
+}
+main section form input:hover{
+	border:1px solid rgba(127,127,127,0.5);
+}
+.submit{
+	padding:0.4em 1em;
+	padding-bottom:0.5em;
+    background:#0c0;
+    color:#fff;
+    font-size:1.5em;
+    line-height: 0.5em;
+    border:0px;
+    border-radius: 0.1em;
+}
+.submit:hover{
+	background: #0a0;
+	border:0px;
+}
+footer p{
+	text-align: center;
+	line-height: 3em;
+	font-size: 14px;
+	background-color: #ef3a31;
+	color:#fff;
+	margin-top: 1em;
+	margin-bottom:3em;
 }
